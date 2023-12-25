@@ -8,10 +8,7 @@ const { PortNumber, MONGODB_URL, ACCESS_TOKEN_KEY_VALUE } = require("./secret");
 //middleWare
 app.use(
   cors({
-    origin: [
-      "https://taskmanagement-beige.vercel.app/",
-      "http://localhost:5173",
-    ],
+    origin: ["https://taskmanagement-beige.vercel.app/"],
     credentials: true,
   })
 );
